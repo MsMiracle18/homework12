@@ -193,3 +193,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+search_results = address_book.search("Lera")
+for record in search_results:
+    print(record.name, record.phone.value)
